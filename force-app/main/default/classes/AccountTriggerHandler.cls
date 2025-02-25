@@ -2,6 +2,10 @@ public class AccountTriggerHandler extends TriggerFrameworkAbstract {
     
     public void beforeInsert(List<SObject> newList) {
         System.debug('Inside Before Insert');
+
+        for(Account acc : newList){
+            acc.Type = 'Customer - Direct';
+        }
     }
 
     public void afterInsert(List<SObject> newList) {
