@@ -20,24 +20,24 @@ public abstract class TriggerFrameworkAbstract {
                 when BEFORE_INSERT {
                     tfa.beforeInsert(Trigger.new);
                 }
-                when AFTER_INSERT {
-                    tfa.afterInsert(Trigger.new);
-                }
-                when BEFORE_UPDATE {
-                    tfa.beforeUpdate(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
-                }
-                when AFTER_UPDATE {
-                    tfa.afterUpdate(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
-                }
-                when BEFORE_DELETE {
-                    tfa.beforeDelete(Trigger.old);
-                }
-                when AFTER_DELETE {
-                    tfa.afterDelete(Trigger.old);
-                }
-                when AFTER_UNDELETE {
-                    tfa.afterUndelete(Trigger.new);
-                }
+                // when AFTER_INSERT {
+                //     tfa.afterInsert(Trigger.new);
+                // }
+                // when BEFORE_UPDATE {
+                //     tfa.beforeUpdate(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
+                // }
+                // when AFTER_UPDATE {
+                //     tfa.afterUpdate(Trigger.new, Trigger.old, Trigger.newMap, Trigger.oldMap);
+                // }
+                // when BEFORE_DELETE {
+                //     tfa.beforeDelete(Trigger.old);
+                // }
+                // when AFTER_DELETE {
+                //     tfa.afterDelete(Trigger.old);
+                // }
+                // when AFTER_UNDELETE {
+                //     tfa.afterUndelete(Trigger.new);
+                // }
             }
         }
     }
